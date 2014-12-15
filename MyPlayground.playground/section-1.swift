@@ -30,3 +30,29 @@ var version = 1.0 // type Double
 print(n1) // i get an error if I type " " + n1 inside.
 
 var isAwesome = true // type : Bool
+
+
+
+//arrays
+var arr = ["el1","el2"]
+
+println("\n" + arr[0])
+
+arr.removeLast()
+
+arr.append("el3")
+
+arr.insert("ele4", atIndex: 0)
+
+arr.reverse()
+
+//Dictionary
+
+var states = [ 520: "Arizona", 214: "Texas", 917: "California"]
+states[214]
+
+states.removeValueForKey(917)
+states[352] = "Atlanta"
+
+states  // its being added to the top. Notice that. 
+
