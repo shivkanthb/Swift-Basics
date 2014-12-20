@@ -15,8 +15,8 @@ println("Area is \(calcArea(height: 100, width: 200))")
 
 
 
-func searchNames(#name: String) ->(Bool,String) {
-    
+//func searchNames(#name: String) ->(Bool,String) {
+ func searchNames(#name: String) ->(found: Bool,desc: String) {  // named tuples.
     let names = ["Shiv","Aaron","Rodrigo"];
     
     var found = (false, "\(name) is present")
@@ -36,3 +36,7 @@ let result = searchNames(name: "Shiv");
 
 result.1   // crazy way to access the indivitual tuple contents
 result.0
+
+//let (found, desc) = searchNames(name: "Rodrigo");
+let result1 = searchNames(name: "Rodrigo");
+result1.found
